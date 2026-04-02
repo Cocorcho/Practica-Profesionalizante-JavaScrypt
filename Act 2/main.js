@@ -17,8 +17,9 @@ if (nombre == "") {
     console.log("Bienvenido al sistema");
     console.log("Datos ingresados");
     console.log(nombre,edad,contrasenia);
-    edad = edad + 10;
-    console.log("En 10 años tendrias ", edad);
+    let edadmas10 = edad + 10;
+    console.log("En 10 años tendrias ", edadmas10);
+
     console.log("Datos ingresados");
     console.log(nombre,edad,contrasenia);
 
