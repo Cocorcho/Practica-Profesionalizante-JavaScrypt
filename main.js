@@ -49,7 +49,7 @@ const users = [{"id":1,"first_name":"Suzi","last_name":"Whymark","bank":"COMMUNI
 {"id":49,"first_name":"Otha","last_name":"Antoons","bank":"Raiffeisenbank am Kulm eG","city":"Villa Nueva","country":"Honduras","salary":2295,"expenses":1512},
 {"id":50,"first_name":"Lorine","last_name":"Craisford","bank":"FIRST NATIONAL BANK OF PENNSYLVANIA","city":"Srebrenica","country":"Bosnia and Herzegovina","salary":4349,"expenses":2501}]
 
-// Funciones auxiliares
+// Funciones auxiliares // 
 
 function calcularAhorro(usuario) {
   return usuario.salary - usuario.expenses;
@@ -58,7 +58,6 @@ function calcularAhorro(usuario) {
 function obtenerNombreCompleto(usuario) {
   return `${usuario.first_name} ${usuario.last_name}`;
 }
-
 
 function buscarUsuario(nombre) {
   return users.find(
@@ -81,13 +80,13 @@ function agruparPor(campo) {
         ahorroTotal: 0
       };
     }
-
     grupos[clave].cantidadUsuarios++;
     grupos[clave].ahorroTotal += ahorro;
   });
 
   return Object.values(grupos);
 }
+
 // ACT 1 //
 
 function balanceMensual() {
@@ -123,7 +122,6 @@ function clasificarAhorro(usuario) {
     : "Ahorro alto";
 }
 
-// Mostrar clasificación de todos los usuarios
 function mostrarClasificaciones() {
   const clasificaciones = users.map((user) => ({
     nombre: obtenerNombreCompleto(user),
